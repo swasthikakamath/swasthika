@@ -1,0 +1,23 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    text-align: center;
+    color: rgb(255, 0, 140);
+}
+a {
+    color: rgb(16, 8, 88);
+}
+a:hover {
+    text-decoration: none;
+    color: rgb(224, 248, 3);
+}
+a:active {
+    background-color: rgb(2, 77, 21);
+}
+a:visited {
+    background-color: rgb(36, 64, 223);
+    color: rgb(240, 192, 37);
+}
