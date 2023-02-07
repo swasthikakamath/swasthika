@@ -5,7 +5,7 @@ html {
 
 body {
     text-align: center;
-    color: rgb(255, 0, 140);
+    color: rgb(19, 18, 18);
 }
 a {
     color: rgb(16, 8, 88);
@@ -20,4 +20,8 @@ a:active {
 a:visited {
     background-color: rgb(36, 64, 223);
     color: rgb(240, 192, 37);
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
