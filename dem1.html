@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="dem1a.css">
 </head>
 <body>
-    <h1 style="background-color:beige">Hello</h1>
+    <h1 style="background-color:rgb(180, 180, 23)">Hello</h1>
     <h1>Hello</h1>
 
     <a href="https://www.google.com/" target="_blank">
-        <img src="cat.jpg" alt="not reached">
+        <img src="cat.jpg" width="500px" height="500px" alt="not reached">
     </a><br>
 
     <a href="mailto:demo@gmail.com">demo@gmail.com</a><br>
@@ -78,6 +78,175 @@
         <td>30</td>
     </tr>
 </table>
+<table style="width: 100%; margin-bottom: 500px;">
+    <tr>
+        <th>Sl. No</th>
+        <th colspan="2">Name</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>Riya</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Pinku</td>
+        <td>Bob</td>
+    </tr>
+</table>
+</table>
+<table style="width: 100%; margin-bottom: 500px;">
+    <tr>
+        <th>Name</th>
+        <td>John</td>
+    </tr>
+    <tr>
+        <th rowspan="2">Phone</th>
+        <td>9611383999</td>
+    </tr>
+    <tr>
+        <td>9845382845</td>
+    </tr>
+</table>
+<ul style="text-align: initial; list-style-type: square;">
+    <li>Apple</li>
+    <li>Orange</li>
+    <li>Banana</li>
+    <li>Grapes</li>
+    <li>Potato</li>
+    <li>Tomato</li>
+</ul>
+<ol type="I" style="text-align: initial;">
+    <li>Apple</li>
+    <li>Orange</li>
+    <li>Banana</li>
+    <li>Grapes</li>
+    <li>Potato</li>
+    <li>Tomato</li>
+</ol>
+
+<iframe src="http://127.0.0.1:5500/dem1.html" width="600px" height="500px"></iframe><br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gudN97NDP7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3884.151675587118!2d74.99060811482465!3d13.215792390695961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbb5640cad259a9%3A0x5a6d815b28dc2909!2sShri%20Venkataramana%20Temple%20-%20(Padutirupati)!5e0!3m2!1sen!2sin!4v1675862707853!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<p class="demo demo2 demo3">Class attribute</p>
+
+<p id="dummy">ID attribute</p>
+
+<form style="margin-bottom: 200px;">
+    <label>Name:</label>
+    <input type="text" placeholder="Enter the name"><br><br>
+
+    <label>Password:</label>
+    <input type="password" placeholder="Enter the password" required><br><br>
+
+    <input type="file"><br><br>
+
+    <label>Email :</label>
+    <input type="email" placeholder="Enter the email" required><br><br>
+
+    <label> Yes:</label>
+    <input type="checkbox">
+
+    <label> No:</label>
+    <input type="checkbox"><br><br>
+
+    <select>
+        <option value="0">Select a item</option>
+        <option value="ford">Ford</option>
+        <option value="bmw">BMW</option>
+        <option value="benz">Benz</option>
+    </select><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<p id="demo"></p>
+<button onclick="myFunction(10, 100)">Alert</button><br><br>
+
+<button onclick="myFunction(5, 10)">Add</button>
+
+<script>
+    function myFunction(x, y) {
+        if(x === 5) {
+           alert("x is equal to 5");
+        } else {
+            alert("x is not equal to 5");
+        }
+        // alert(x * y);
+    }
+
+    var a = 10;
+    let b = 15;
+    const c = 20;
+
+    var add = a + b + c;
+    var sub = a - b - c;
+    var mul = a * b * c;
+    var div = a / b;
+    var mod = b % a;
+
+    console.log(add, sub, mul, div, mod);
+
+    var x = 100;
+    x += 20;
+    
+    console.log(x);
+
+    var p = 5;
+    var str1 = "Hello"
+    var str2 = "World"
+    var bool = false;
+    var demo;
+
+    var arr = [1, 2, 3, 10, 50, 100, "Hello"];
+
+    arr.map((item) => {
+        console.log(item);
+    });
+    // console.log(arr);
+
+    // arr.pop();
+    // console.log(arr);
+
+    // arr.push("World");
+    // console.log(arr);
+
+    var obj = {name: "petry", year: "2015", color: "black"};
+
+    var date = new Date();
+    console.log(date);
+    console.log(date.getDate());
+
+    console.log(obj.year);
+
+    console.log(x === 10);
+    console.log(x !== 10);
+    console.log(x > 10);
+    console.log(x < 10);
+    console.log(x <= 10);
+    console.log(x >= 10);
+
+    console.log(x === 10 && x !== 10);
+    console.log(x === 10 || x !== 10);
+    console.log(! (x === 10));
+    console.log(!(x !== 10));
+
+    console.log(str1 +" "+ str2);
+    console.log(p + str1);
+
+
+    
+    document.getElementById("demo").innerHTML = "Hello World";
+</script>
+
+<noscript>Sorry, your browser does not support javaScript.</noscript>
+
+
+
+
+
 
 
 </body>
